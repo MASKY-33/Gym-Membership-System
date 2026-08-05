@@ -13,7 +13,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 # Leg de verbinding tussen die Python-bouwtekening (hierboven) en het echte bestand op je harde schijf (gym_membership.db).
 
 #The engine drives to the Database-file
-DATABASE_URL = "sqlite:///gym_membership.db"
+DATABASE_URL = "sqlite:///:memory:"
 
 # engine (De Vrachtwagen): Dit is de motor die de weg weet naar je database-bestand. Hij zorgt dat de verbinding fysiek tot stand komt.
 engine = create_engine(DATABASE_URL)
